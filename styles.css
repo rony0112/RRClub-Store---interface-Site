@@ -720,13 +720,14 @@ header nav ul li a:hover::after {
     position: relative;
     background: rgba(15, 15, 30, 0.92);
     backdrop-filter: blur(20px);
-    margin: 8% auto;
+    margin: 5vh auto;
     padding: 40px 30px;
     border: 1px solid rgba(0, 247, 255, 0.35);
     border-radius: 24px;
     width: 85%;
-    max-width: 720px;
-    box-shadow: 0 0 70px rgba(0, 247, 255, 0.45);
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
     color: #f0f0ff;
     text-align: center;
 }
@@ -782,8 +783,11 @@ header nav ul li a:hover::after {
 }
 
 #modalImage {
-    max-width: 90%;                   
-    margin: 15px auto;                 
+    display: block;          
+    max-width: 100%;       
+    max-height: 250px;     
+    margin: 15px auto;
+    object-fit: contain;   
 }
 
 #modalDescription {
@@ -811,6 +815,10 @@ header nav ul li a:hover::after {
     }
 
     #modalDescription {
-        font-size: 1.05rem;
+        font-size: 1rem;
+        line-height: 1.5;
+       margin-bottom: 20px;    /* Margem menor */
+       padding: 0 10px;
+}
     }
  }
